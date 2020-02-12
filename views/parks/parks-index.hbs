@@ -1,0 +1,18 @@
+<div class="container coasters-index">
+
+  <a href="/parks/new" class="btn btn-dark">Crear nuevo Parque</a>
+
+  <h1 style="font-weight: 100">Índice de Parques</h1>
+
+  <hr>
+  {{#each parks}}
+  <a href="/parks/delete/{{_id}}" class="btn btn-sm btn-dark">Eliminar</a>
+  <a href="/parks/edit/{{_id}}" class="btn btn-sm btn-dark mr-2">Editar</a>
+  <h4>{{name}}</h4>
+  <p>{{description}}</p>
+  <hr>
+  {{/each}}
+
+
+
+</div>
